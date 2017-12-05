@@ -89,45 +89,34 @@ img {
 }
 
 /*===================================
-=            Grid styles            =
+=            Flex styles            =
 ===================================*/
-.container {
-  display: grid;
-  grid-gap: 20px;
 
-  min-height: 100vh;
-}
+.main-nav {
 
-.box {
+  li {
+    width: 100px;
+  }
 
-  &:nth-child(5) {
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    color: skyblue;
 
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
   }
 }
 
-.container > * {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  // padding: 15px;
-
-  font-size: 30px;
-  line-height: 1.5;
-
-  background-color: yellowgreen;
-  transition: all 0.5s;
-
-
-  &:nth-child(2) {
-    // grid-area: 1 / 2 / span 2 / span 1;
-    // background-color: skyblue;
-  }
-
-  &:hover {
-    background-color: mediumpurple;
-  }
-}
+/*=====  End of Flex styles  ======*/
 
 // yellowgreen mediumseagreen skyblue mediumpurple palegoldenrod dodgerblue orangered
-/*=====  End of Grid styles  ======*/
